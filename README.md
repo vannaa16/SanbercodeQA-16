@@ -1,4 +1,4 @@
-# SanbercodeQA-16
+# SanbercodeQA-Kelompok16
 final project sanbercode QA Bootcamp 45
 
 Nama Anggota Kelompok
