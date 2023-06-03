@@ -6,7 +6,7 @@ Nama Anggota Kelompok
 - Aqsal
 - Dinar Jaya Pertela
 - Muhammad Danni Rachman
-- Riska
+- Riska Putri Nurkasanah
 
 link Test Plan Document :
 https://drive.google.com/drive/folders/1bCKijcHK78LTVGf0MwQajswkA6rhjHqe?usp=sharing
