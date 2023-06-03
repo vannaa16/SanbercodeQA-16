@@ -1,0 +1,17 @@
+{
+  "name": "sanbercodeqa-kelompok16",
+  "version": "1.0.0",
+  "description": "final project",
+  "main": "index.js",
+  "scripts": {
+    
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "giovanna",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.13.0"
+  }
+}

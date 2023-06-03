@@ -9,6 +9,6 @@ Nama Anggota Kelompok
 - Riska
 
 link Test Plan Document :
-https://drive.google.com/drive/folders/1bCKijcHK78LTVGf0MwQajswkA6rhjHqe
+https://drive.google.com/drive/folders/1bCKijcHK78LTVGf0MwQajswkA6rhjHqe?usp=sharing
 
 website https://opensource-demo.orangehrmlive.com/ 
