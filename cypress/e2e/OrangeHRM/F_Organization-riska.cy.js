@@ -11,9 +11,14 @@ describe('Admin-Organization', () => {
     BaseLogin.clickLogin()
     BaseLogin.validatePageDashboard()
     BaseLogin.clickAdminMenu()
-    cy.get('.--active > .oxd-topbar-body-nav-tab-item')
     cy.get('.oxd-table-filter-header-title > .oxd-text').should('be.visible')
     cy.get('.oxd-topbar-header-breadcrumb-level').should('be.visible')
+    BaseLogin.clickOrganization()
+    BaseLogin.clickLocations()
+
+    
+    //cy.get('.oxd-table-filter-header-title > .oxd-text').should('be.visible')
+    
    
   })
 
