@@ -1,1 +1,0 @@
-riska coba coba

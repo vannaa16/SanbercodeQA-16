@@ -50,7 +50,6 @@ class baseLogin {
         cy.get(this.inputUser).type('Admin')
 
     }
-
  
 
 }
