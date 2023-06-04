@@ -75,7 +75,7 @@ describe('Admin-Organization', () => {
     cy.get('.oxd-form-actions > .oxd-button--secondary').should('be.visible').click({force:true});
   })
 
-  it.only('TC05 - Verify info locations by City Failed', () => {
+  it('TC05 - Verify info locations by City Failed', () => {
     BaseLogin.visitPage()
     cy.contains("Login")
     BaseLogin.inputUsername()

@@ -9,12 +9,9 @@ class baseLogin {
     logoutButton = ':nth-child(4) > .oxd-userdropdown-link'
     admin = ':nth-child(1) > .oxd-main-menu-item > .oxd-text'
     inputUser = ':nth-child(2) > .oxd-input'
-<<<<<<< HEAD
-=======
-    Organization = ':nth-child(3) > .oxd-topbar-bo:dy-nav-tab-item' //riska
-    Locations = ':nth-child(2) > .oxd-topbar-body-nav-tab-link' // riska
+//<<<<<<< HEAD
     userPage = ':nth-child(1) > .oxd-main-menu-item > .oxd-text' //dinarjy
->>>>>>> a7bf4c984c0d73ce9f582abd57796f533b96b5dc
+//>>>>>>> a7bf4c984c0d73ce9f582abd57796f533b96b5dc
 
     
 
