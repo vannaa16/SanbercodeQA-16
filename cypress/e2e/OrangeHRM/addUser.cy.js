@@ -10,7 +10,6 @@ describe('addUseronOrangeHRM', () => {
         BaseLogin.inputPassword()
         BaseLogin.clickLogin()
         BaseLogin.userPage()
-        //cy.get(':nth-child(1) > .oxd-main-menu-item > .oxd-text').click()
         cy.get('.orangehrm-header-container > .oxd-button').click()
         cy.get(':nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-select-wrapper > .oxd-select-text > .oxd-select-text-input').click()
         cy.get('.oxd-select-dropdown.--positon-bottom').click()
