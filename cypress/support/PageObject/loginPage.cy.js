@@ -9,8 +9,7 @@ class baseLogin {
     logoutButton = ':nth-child(4) > .oxd-userdropdown-link'
     admin = ':nth-child(1) > .oxd-main-menu-item > .oxd-text'
     inputUser = ':nth-child(2) > .oxd-input'
-    Organization = ':nth-child(3) > .oxd-topbar-bo:dy-nav-tab-item' //riska
-    Locations = ':nth-child(2) > .oxd-topbar-body-nav-tab-link' // riska
+
     
 
     inputUsername(){
@@ -54,13 +53,7 @@ class baseLogin {
 
     }
  
-    clickOrganization(){
-        cy.klik(this.Organization)
-    } //riska
 
-    clickLocations(){
-        cy.klik(this.Locations)
-    } //riska
 
 }
 export default baseLogin;
