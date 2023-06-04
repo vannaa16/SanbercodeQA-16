@@ -4,7 +4,7 @@ const loginData = require("../../fixtures/OrangeHRM/logininput.json")
 describe('Admin-Organization', () => {
   const BaseLogin = new baseLogin()
 
-  it('TC01 - Search info locations by NAME Successfully ', () => {
+  it('TC01 - Verify info locations by NAME Successfully', () => {
     BaseLogin.visitPage()
     cy.contains("Login")
     BaseLogin.inputUsername()
@@ -16,7 +16,7 @@ describe('Admin-Organization', () => {
     cy.get(':nth-child(3) > .oxd-topbar-body-nav-tab-item').click()
     cy.contains("Locations")
     cy.get(':nth-child(2) > .oxd-topbar-body-nav-tab-link').click()
-    cy.get(':nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-input').type("ig road") //Isi Name
+    cy.get(':nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-input').type("Aisyah") //Isi Name
     cy.get('.oxd-form-actions > .oxd-button--secondary').should('be.visible').click({force:true})
     cy.contains("Record Found")
    
@@ -34,7 +34,7 @@ describe('Admin-Organization', () => {
     cy.get(':nth-child(3) > .oxd-topbar-body-nav-tab-item').click()
     cy.contains("Locations")
     cy.get(':nth-child(2) > .oxd-topbar-body-nav-tab-link').click()
-    cy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').type("hublic") //Isi City
+    cy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').type("Kabul") //Isi City
     cy.get('.oxd-form-actions > .oxd-button--secondary').should('be.visible').click({force:true})
     cy.contains("Record Found")
    
@@ -68,7 +68,7 @@ describe('Admin-Organization', () => {
     cy.get(':nth-child(3) > .oxd-topbar-body-nav-tab-item').click()
     cy.contains("Locations")
     cy.get(':nth-child(2) > .oxd-topbar-body-nav-tab-link').click()
-    cy.get(':nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-input').type("Alma") //Isi Name
+    cy.get(':nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-input').type("Aisyah") //Isi Name
     cy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').type("Kabul")//Isi city
     cy.get('.oxd-select-text--after > .oxd-icon').click({force:true})
     cy.get('.oxd-select-dropdown > :nth-child(2) > span').click()
@@ -87,14 +87,14 @@ describe('Admin-Organization', () => {
     cy.get(':nth-child(3) > .oxd-topbar-body-nav-tab-item').click()
     cy.contains("Locations")
     cy.get(':nth-child(2) > .oxd-topbar-body-nav-tab-link').click()
-    cy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').type("Lombok") //Isi City
+    cy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').type("Jakarta") //Isi City
     cy.get('.oxd-form-actions > .oxd-button--secondary').should('be.visible').click({force:true})
     cy.get('.orangehrm-horizontal-padding > .oxd-text').should('contain.text','No Records Found')
    
   })
 
 
-  it('TC07 - Verify when Reset Success', () => {
+  it('TC06 - Verify when Reset Success', () => {
     BaseLogin.visitPage()
     cy.contains("Login")
     BaseLogin.inputUsername()
@@ -106,11 +106,11 @@ describe('Admin-Organization', () => {
     cy.get(':nth-child(3) > .oxd-topbar-body-nav-tab-item').click()
     cy.contains("Locations")
     cy.get(':nth-child(2) > .oxd-topbar-body-nav-tab-link').click()
-    cy.get(':nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-input').type("ig road") //Isi Name
-    cy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').type("hublic")//Isi city
-    cy.get('.oxd-button--ghost').click()
-   
+    cy.get(':nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-input').type("Aisyah") //Isi Name
+    cy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').type("Kabul")//Isi city
+    cy.get('.oxd-button--ghost').click({force:true});
+    cy.get(':nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-input').should('be.empty')
+    cy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').should('be.empty')
   })
-
 
 })
