@@ -9,13 +9,9 @@ describe('Admin-Organization', () => {
     BaseLogin.inputUsername()
     BaseLogin.inputPassword()
     BaseLogin.clickLogin()
-    BaseLogin.validatePageDashboard()
-    BaseLogin.clickAdminMenu()
-    cy.get('.oxd-table-filter-header-title > .oxd-text').should('be.visible')
-    cy.get('.oxd-topbar-header-breadcrumb-level').should('be.visible')
-    BaseLogin.clickOrganization()
-    BaseLogin.clickLocations()
-
+    cy.get(':nth-child(1) > .oxd-main-menu-item > .oxd-text').click()
+    cy.get(':nth-child(3) > .oxd-topbar-body-nav-tab-item').click()
+    cy.get(':nth-child(2) > .oxd-topbar-body-nav-tab-link').click()
     
     //cy.get('.oxd-table-filter-header-title > .oxd-text').should('be.visible')
     
